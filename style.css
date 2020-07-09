@@ -6,7 +6,7 @@
     color: 	rgb(43, 59, 41);
 }
 
-@media (max-width: 40rem){
+@media (max-width: 80rem){
     
 * {
     margin: 0;
