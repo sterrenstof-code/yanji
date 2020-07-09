@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+    color: 	rgb(43, 59, 41);
+}
+
+@media (max-width: 40rem){
+    
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Titillium Web', sans-serif;
+}
+    /* header*/
+html {
+    background-image: url(IMG_6013kopie.JPG);
+    background-size: cover;
+    background-position: bottom 10% left 5%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: auto;
+}
+
+.homePage {
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+        justify-content: left;
+        position: sticky;
+        align-items: center;
+        align-content: center; 
+        height: 10vh;
+    }
+
+/* hamburger */
+
+#menuToggle
+    {
+      display: block;
+      position: fixed;
+      top: 5vh;
+      left: 8vw;
+      z-index: 1;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+    
+    #menuToggle a
+    {
+      text-decoration: none;
+      color: black;
+      transition: color 0.3s ease;
+    }
+    
+    #menuToggle a:hover
+    {
+      color: tomato;
+    }
+    
+    #menuToggle input
+    {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      cursor: pointer;
+      opacity: 0; /* hide this */
+      z-index: 2; /* and place it over the hamburger */
+      -webkit-touch-callout: none;
+    }
+ 
+    #menuToggle span
+    {
+      display: block;
+      width: 25px;
+      height: 2px;
+      margin-bottom: 4px;
+      position: relative;
+      background: black;
+      border-radius: 3px;
+      z-index: 1;
+      transform-origin: 4px 0px;
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),                  opacity 0.55s ease;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      -ms-border-radius: 3px;
+      -o-border-radius: 3px;
+      -webkit-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),                  opacity 0.55s ease;
+      -moz-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),                  opacity 0.55s ease;
+      -ms-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),                  opacity 0.55s ease;
+      -o-transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),                  background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),                  opacity 0.55s ease;
+}
+    
+    #menuToggle span:first-child
+    {
+      transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2)
+    {
+      transform-origin: 0% 100%;
+    }
+    
+    #menuToggle input:checked ~ span
+    {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: #232323;
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(3)
+    {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(2)
+    {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    #menu
+    {
+      position: absolute;
+      width: 55vw;
+      margin: -100px 0 0 -50px;
+      padding: 50px;
+      padding-top: 125px;
+      background: rgb(227, 230, 231);
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      /* to stop flickering of text in safari */
+      
+      transform-origin: 0% 0%;
+      transform: translate(-100%, 0);
+      
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+    
+    #menu li
+    {
+      padding: 20px 0;
+      font-size: 22px;
+    }
+    
+    /*
+     * And let's slide it in from the left
+     */
+    #menuToggle input:checked ~ ul
+    {
+      transform: none;
+    }
+    
+
+/* home Page */
+
+.title {
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    height: 90vh;
+    color:	rgb(43, 59, 41);
+}
+
+.firstTitle {
+    margin-top: 5vh;
+    align-self: center;
+    letter-spacing: 0.5rem;
+    font-size: 1.5rem;
+    margin-bottom: 10%;
+    padding: 0rem 1rem 0.5rem 1rem ;
+    border: 0.5px solid 	rgb(43, 59, 41);
+    text-align: center;
+   /* text-transform: uppercase; */
+   font-weight: 400;
+   vertical-align: middle;
+}
+
+.firstTitle span {
+    font-weight: 400;
+    /* text-transform: none; */
+    align-self: center;
+    letter-spacing: 1.3rem;
+    font-size: 2rem;
+    padding: 0rem 0.5rem;
+    margin-bottom: 10%;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    vertical-align: middle;
+}
+
+.secondTitle {
+    text-transform: uppercase;
+    font-size: 16px;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 20%;
+    letter-spacing: 1.5px;
+    vertical-align: middle;
+}
+
+.secondTitle span {
+    font-size: 1rem;
+}
+
+.bottomBookIt {
+    align-self: flex-end;
+    border-top: 1px solid rgb(43, 59, 41);
+    width: 90vw;
+    display: flex;
+    justify-content: end;
+    align-content: center;
+    color: black;
+    text-decoration: none !important;
+}
+
+.bookIt {
+    text-transform: uppercase;
+    color: black;
+    text-decoration: none !important;
+    align-self: flex-end;
+    text-align: left;
+    padding-top: 1rem;
+}
+
+/* main  */
+
+    .main {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .onderdeel {
+        display: inline-block;
+        margin: 1rem auto;
+        vertical-align: center;
+        padding: 0 0.7rem;
+        vertical-align: middle;
+    }
+
+    .calendar {
+       display: grid;
+       background-color: rgb(227, 230, 231);
+       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+       grid-template-columns: 1fr 1.3fr;
+       padding: 1rem;
+       margin: 1rem ;
+       font-size: 3vw;
+       border-left: 0.5px solid	rgb(43, 59, 41);
+       vertical-align: middle;
+       justify-content: center;
+       align-items: center;
+       align-content: center;
+
+}
+
+    #week {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-self: center;
+        padding: 0.3rem;
+        font-size: 1rem;
+    }
+
+    #monday {
+        grid-row-start: 2;
+        border-bottom: 1px solid black;
+        width: 70%;
+        
+    }
+    #tuesday {
+        grid-row-start: 3;
+        border-bottom: 1px solid black;
+        align-self: center;
+        width: 70%;
+    }
+    #wednesday {
+        grid-row-start: 4;
+        border-bottom: 1px solid black;
+        align-self: center;
+        width: 70%;
+        
+    }
+    #thursday {
+        grid-row-start: 5;
+        border-bottom: 1px solid black;
+        align-self: center;
+        width: 70%;
+        
+    }
+    #friday {
+        grid-row-start: 6;
+        border-bottom: 1px solid black;
+        align-self: center; 
+        width: 70%;
+    }
+
+    #saturday {
+        grid-row-start: 7;
+        border-bottom: 1px solid black;
+        align-self: center;
+        width: 70%;
+    }
+
+    #sunday {
+        grid-row-start: 8;
+        border-bottom: 1px solid black;
+        align-self: center;
+        width: 70%;
+    }
+
+    .hallenyoga {
+        margin-top: 1.5rem;
+        grid-row-start: 9;
+        align-self: flex-start;
+        
+    }
+
+    .outdoor {
+        margin-top: 1.5rem;
+        grid-row-start: 9;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        align-self: flex-start;
+    }
+
+    .infoOne {
+        grid-row-start: 2;
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+
+    .infoTwo {
+        grid-row-start: 4;
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+
+    .infoThree {
+        grid-row-start: 6;
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+
+    .infoFour {
+        grid-row-start: 7;
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+
+    .infoFive {
+        grid-row-start: 8;
+        grid-column-start: 2;
+        grid-column-end: 2;
+    }
+   
+.preise{
+    background-color: rgb(227, 230, 231);
+    padding: 1rem;
+    margin: 1rem 2rem 1rem 2rem;
+    border-left: 0.5px solid 	rgb(43, 59, 41);
+}
+
+.anmeldung{
+    background-color: rgb(227, 230, 231);
+    padding: 1rem;
+    margin: 1rem 2rem 1rem 2rem;
+    border-left: 0.5px solid 	rgb(43, 59, 41);
+}
+
+.standorte{
+    background-color: rgb(227, 230, 231);
+    padding: 1rem;
+    margin: 1rem 2rem 1rem 2rem;
+    border-left: 0.5px solid 	rgb(43, 59, 41);
+}
+
+.uberMich{
+    background-color: rgb(227, 230, 231);
+    padding: 1rem;
+    margin: 1rem 2rem 6rem 2rem;
+    border-left: 0.5px solid 	rgb(43, 59, 41);
+}
+
+}
