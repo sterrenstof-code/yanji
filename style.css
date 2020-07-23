@@ -15,15 +15,16 @@
     font-family: 'Titillium Web', sans-serif;
 }
     /* header*/
-html {
-    background-image: url(IMG_6013kopie.JPG);
+body {
+    background-image: url(IMG_6013kopie.JPG) ;
     background-size: cover;
-    background-position: center center;
+    background-position:   bottom 10% left 10%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-color: rgb(216, 216, 216);
     overflow: auto;
+    height: 100vh;
   /* Center and scale the image nicely */
+  background-position: center;
 }
 
 .homePage {
