@@ -23,9 +23,7 @@ html {
     background-attachment: fixed;
     background-color: rgb(216, 216, 216);
     overflow: auto;
-    height: 100%;
   /* Center and scale the image nicely */
-  background-position: center;
 }
 
 .homePage {
