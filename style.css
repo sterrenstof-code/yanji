@@ -18,9 +18,10 @@
 html {
     background-image: url(IMG_6013kopie.JPG);
     background-size: cover;
-    background-position: bottom 10% left 5%;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    background-color: rgb(216, 216, 216);
     overflow: auto;
     height: 100%;
   /* Center and scale the image nicely */
