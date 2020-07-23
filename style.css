@@ -174,17 +174,17 @@ html {
 }
 
 .firstTitle {
-    margin-top: 3vh;
     align-self: center;
     letter-spacing: 0.5rem;
     font-size: 1.5rem;
-    margin-bottom: 10%;
     padding: 0.5rem 1rem 0.5rem 1rem ;
     border: 0.5px solid 	rgb(43, 59, 41);
     text-align: center;
    /* text-transform: uppercase; */
-   font-weight: 400;
-   vertical-align: middle;
+    font-weight: 400;
+    vertical-align: middle;
+    position: absolute;
+    bottom: 60%;
 }
 
 .firstTitle span {
@@ -205,7 +205,8 @@ html {
     font-size: 16px;
     align-self: center;
     text-align: center;
-    margin-bottom: 20%;
+    position: absolute;
+    bottom: 50%;
     letter-spacing: 1.5px;
     vertical-align: middle;
 }
