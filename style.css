@@ -6,7 +6,7 @@
     color: 	rgb(43, 59, 41);
 }
 
-@media (max-width: 80rem){
+@media (max-width: 40rem){
     
 * {
     margin: 0;
@@ -129,9 +129,10 @@ html {
     #menu
     {
       position: absolute;
-      width: 55vw;
-      margin: -100px 0 0 -50px;
-      padding: 50px;
+      width: 65vw;
+      margin: -30vw 0 0 -15vw;
+      padding-top: 2rem;
+      padding-left: 3rem;
       padding-top: 125px;
       background: rgb(227, 230, 231);
       list-style-type: none;
@@ -178,7 +179,7 @@ html {
     letter-spacing: 0.5rem;
     font-size: 1.5rem;
     margin-bottom: 10%;
-    padding: 0rem 1rem 0.5rem 1rem ;
+    padding: 0.5rem 1rem 0.5rem 1rem ;
     border: 0.5px solid 	rgb(43, 59, 41);
     text-align: center;
    /* text-transform: uppercase; */
@@ -215,13 +216,16 @@ html {
 
 .bottomBookIt {
     align-self: flex-end;
-    border-top: 1px solid rgb(43, 59, 41);
-    width: 90vw;
+    border-top: 1px solid rgb(43, 59, 41, 0.5);
+    width: 82vw;
     display: flex;
-    justify-content: end;
-    align-content: center;
+    position: absolute;
+    bottom: 8%;
+    justify-content: flex-start;
+    align-content: flex-end;
     color: black;
     text-decoration: none !important;
+    z-index: -10;
 }
 
 .bookIt {
@@ -231,6 +235,12 @@ html {
     align-self: flex-end;
     text-align: left;
     padding-top: 1rem;
+    font-size: 16px;
+    z-index: -10;
+}
+
+.bookIt a {
+    z-index: -10;
 }
 
 /* main  */
@@ -241,39 +251,52 @@ html {
         flex-direction: column;
     }
 
-    .onderdeel {
-        display: inline-block;
-        margin: 1rem auto;
-        vertical-align: center;
-        padding: 0 0.7rem;
-        vertical-align: middle;
+    .main div {
+        margin: 3rem 2rem;
     }
 
+   
     .calendar {
        display: grid;
        background-color: rgb(227, 230, 231);
-       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-       grid-template-columns: 1fr 1.3fr;
+       grid-template-rows: repeat(5, 1.3fr);
+       grid-template-columns: 1fr 1fr 1fr;
        padding: 1rem;
-       margin: 1rem ;
+       padding-bottom: 2rem;
+       margin: 1rem 2rem;
        font-size: 3vw;
-       border-left: 0.5px solid	rgb(43, 59, 41);
        vertical-align: middle;
        justify-content: center;
        align-items: center;
        align-content: center;
+}
 
+.onderdeel {
+    display: block;
+    vertical-align: center;
+    font-size: 1.5rem;
+    padding: 0.5rem 0;
+}
+
+.calendar .onderdeel {
+        grid-row-start: 1;
+        grid-column-start: 1;
+        grid-column-end: 4;
+        font-size: 1.5rem;
+        justify-self: flex-start;
 }
 
     #week {
-        grid-row-start: 1;
+        grid-row-start: 2;
         grid-column-start: 1;
-        grid-column-end: 3;
-        justify-self: center;
-        padding: 0.3rem;
+        grid-column-end: 4;
+        justify-self: flex-start;
+        padding: 0.3rem 0;
         font-size: 1rem;
+        /* border-bottom: 1px solid black;
+        width: 100%; */
     }
-
+/*
     #monday {
         grid-row-start: 2;
         border-bottom: 1px solid black;
@@ -293,105 +316,122 @@ html {
         width: 70%;
         
     }
+    */
     #thursday {
-        grid-row-start: 5;
+        grid-row-start: 3;
         border-bottom: 1px solid black;
         align-self: center;
         width: 70%;
         
     }
-    #friday {
+     /* #friday {
         grid-row-start: 6;
         border-bottom: 1px solid black;
         align-self: center; 
         width: 70%;
     }
 
-    #saturday {
+     #saturday {
         grid-row-start: 7;
         border-bottom: 1px solid black;
         align-self: center;
         width: 70%;
-    }
+    } */
 
     #sunday {
-        grid-row-start: 8;
+        grid-row-start: 4;
         border-bottom: 1px solid black;
         align-self: center;
         width: 70%;
     }
 
     .hallenyoga {
-        margin-top: 1.5rem;
-        grid-row-start: 9;
+       
+        grid-row-start: 5;
+        grid-row-end: 5;
+        grid-column-start: 1;
+        grid-column-end: 3;
         align-self: flex-start;
+        align-self: center;
         
     }
 
     .outdoor {
-        margin-top: 1.5rem;
-        grid-row-start: 9;
-        grid-column-start: 2;
-        grid-column-end: 2;
+       
+        grid-row-start: 5;
+        grid-column-start: 3;
+        grid-column-end: 3;
         align-self: flex-start;
+        align-self: center;
     }
 
     .infoOne {
-        grid-row-start: 2;
-        grid-column-start: 2;
-        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-column-start: 3;
+        grid-column-end: 3;
     }
 
     .infoTwo {
         grid-row-start: 4;
-        grid-column-start: 2;
-        grid-column-end: 2;
+        grid-column-start: 3;
+        grid-column-end: 3;
     }
 
-    .infoThree {
-        grid-row-start: 6;
+    #early {
+        grid-row-start: 3;
         grid-column-start: 2;
         grid-column-end: 2;
+        margin: 0 auto;
+        
+    }
+    #late {
+        grid-row-start: 4;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        margin: 0 auto;
+        
     }
 
-    .infoFour {
-        grid-row-start: 7;
-        grid-column-start: 2;
-        grid-column-end: 2;
-    }
+.button {
+    display: block;
+    padding: 01rem;
+    margin: 1rem 0 0.3rem 0;
+    background-color:	rgb(102, 112, 52);
+}
 
-    .infoFive {
-        grid-row-start: 8;
-        grid-column-start: 2;
-        grid-column-end: 2;
-    }
-   
+.button a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
 .preise{
     background-color: rgb(227, 230, 231);
     padding: 1rem;
-    margin: 1rem 2rem 1rem 2rem;
-    border-left: 0.5px solid 	rgb(43, 59, 41);
+    margin: 1rem 2rem;
+    font-size: 1rem;
 }
 
 .anmeldung{
     background-color: rgb(227, 230, 231);
     padding: 1rem;
-    margin: 1rem 2rem 1rem 2rem;
-    border-left: 0.5px solid 	rgb(43, 59, 41);
+    margin: 1rem 2rem;
+    font-size: 1rem;
+    
 }
 
 .standorte{
     background-color: rgb(227, 230, 231);
     padding: 1rem;
-    margin: 1rem 2rem 1rem 2rem;
-    border-left: 0.5px solid 	rgb(43, 59, 41);
+    margin: 1rem 2rem;
+    font-size: 1rem;
 }
 
 .uberMich{
     background-color: rgb(227, 230, 231);
     padding: 1rem;
-    margin: 1rem 2rem 6rem 2rem;
-    border-left: 0.5px solid 	rgb(43, 59, 41);
+    margin: 1rem 2rem;
+    font-size: 1rem;
+    
 }
 
 }
