@@ -21,9 +21,9 @@ body {
     height: 100vh;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
-  /* Center and scale the image nicely */
-    
+    background-position: bottom 10% left 10%;
+
+
 }
 
 .homePage {
