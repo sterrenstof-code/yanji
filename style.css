@@ -231,7 +231,7 @@ body {
     align-content: flex-end;
     color: black;
     text-decoration: none !important;
-    z-index: 1;
+    z-index: 0;
 }
 
 .bookIt {
@@ -242,7 +242,7 @@ body {
     text-align: left;
     padding-top: 1rem;
     font-size: 16px;
-    z-index: 1;
+    z-index: 0;
 }
 
 .bookIt a {
