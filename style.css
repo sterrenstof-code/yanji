@@ -172,7 +172,7 @@ body {
     align-content: center;
     height: 90vh;
     color:	rgb(43, 59, 41);
-    z-index: -20;
+    z-index: -10;
 }
 
 .firstTitle {
@@ -231,7 +231,7 @@ body {
     align-content: flex-end;
     color: black;
     text-decoration: none !important;
-    z-index: -20;
+    z-index: 1;
 }
 
 .bookIt {
@@ -242,11 +242,11 @@ body {
     text-align: left;
     padding-top: 1rem;
     font-size: 16px;
-    z-index: -20;
+    z-index: 1;
 }
 
 .bookIt a {
-    z-index: -10;
+    z-index: 1;
 }
 
 /* main  */
