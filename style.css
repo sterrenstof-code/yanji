@@ -94,7 +94,7 @@ cursor: pointer;
 }
 
 .knoppen-main-anmeldung {
-    color: red;
+    color: rgb(129, 124, 56);
     margin: 0.5rem 2.3rem;
     cursor:pointer;
     /*color: rgb(43, 59, 41);*/
@@ -103,24 +103,26 @@ cursor: pointer;
 }
 
 .uberMich-main {
+    text-align: left;
     display: block;
     height: 90vh;
-    width: 25%;
+    width: 27%;
     position: absolute;
     padding-left: 0.5rem;
-    top: 10vh;
+    bottom: 5vh;
     animation: slideMe 0.5s ease-out;
     -webkit-animation: slideMe 0.5s ease-out;
     border-right: 1px solid rgba(114, 114, 114, 0.233);
     max-height: 90vh;
 }
 
-.calendar-main, .preise-main{
+.calendar-main, .preise-main, .anmeldung-main{
+    text-align: left;
     padding-left: 0.5rem;
    height: 90vh;
    width: 25%;
    position: absolute;
-   bottom: 0;
+   bottom: 5vh;
    display: none;
    animation: slideMe 0.5s ease-out;
    -webkit-animation: slideMe 0.5s ease-out;
@@ -138,15 +140,16 @@ cursor: pointer;
     font-family: 'Mulish', sans-serif;
     color:  rgb(43, 59, 41);
     padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-top: 2rem;
 }
 
 .main-main h4 {
     font-family: 'Mulish', sans-serif;
     color:  rgb(43, 59, 41);
-    padding: 1.5rem 1.5rem 0 1.5rem;
+    padding: 0.5rem 1.5rem 0 1.5rem;
 }
 
-.onderdeel, {
+.onderdeel {
     animation: fadein 1.5s ease-out;
     -webkit-animation: fadein 1.5s ease-out;
 }
@@ -182,7 +185,7 @@ cursor: pointer;
    animation: slideUp 0.5s ease-out;
    -webkit-animation: slideUp 0.5s ease-out;
    border-right: 1px solid rgba(114, 114, 114, 0.233);
-   text-align: right;
+   text-align: justify;
 }
 */
 
@@ -206,7 +209,7 @@ cursor: pointer;
     display: block;
     margin: 0 1.3rem;
     padding: 0.5rem 1rem;
-    background-color: rgba(92, 116, 95, 0.938);
+    background-color: rgba(129, 124, 56, 0.925);
     width: 85%;
     color: rgb(245, 245, 245);
 
@@ -410,7 +413,7 @@ cursor: pointer;
     display: none;
 }
 
-..firstTitle-main {
+.firstTitle-main {
     display: none;
 }
 
