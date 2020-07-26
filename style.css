@@ -13,9 +13,12 @@ body {
     background-position: center 10%;
 }
 
+
+
 .header, .firstTitle, .secondTitle, .calendar, .preise, .anmeldung, .standorte, .uberMich, .bottomBookIt {
     display: none;
 }
+
 
 .homePage {
     height: 100vh;
@@ -42,6 +45,45 @@ body {
     border-bottom: 1px solid rgba(19, 18, 18, 0.233);
     cursor: pointer;
 }
+
+.fa {
+    padding: 0.7rem;
+    font-size: 15px;
+    width: 40px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+
+.fa-facebook:hover {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-instagram:hover{
+background: #125688;
+  color: white;
+}
+
+.fa-facebook {
+    position: absolute;
+    bottom: 8vh;
+    right: 8vh;
+    background: rgb(208, 203, 209);
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+  }
+
+  .fa-instagram {
+    position: absolute;
+    bottom: 8vh;
+    right: 15vh;
+    background: rgb(208, 203, 209);
+    color: black;
+    border: 1px solid rgba(0, 0, 0, 0.493);
+  }
+  
 
 .bookIt-main {
 font-family: 'Titillium Web', sans-serif;
@@ -225,6 +267,13 @@ cursor: pointer;
 
 }
 
+.calendar-main h4 {
+    display: inline-block;
+    padding: 0.5rem;
+    margin:  0.5rem 1rem;
+    border: 1px solid rgba(37, 36, 18, 0.315)
+}
+
 
 @keyframes fadein {
     from {
@@ -319,6 +368,8 @@ cursor: pointer;
 }
 };
 
+
+
 /* ipad */
 
 @media only screen 
@@ -368,6 +419,7 @@ cursor: pointer;
     width: 0;
     height: 0;
 }
+
 
 
 .firstTitle-main {
@@ -649,14 +701,13 @@ body {
     display: inline-block;
     align-self: flex-end;
     border-top: 1px solid rgb(43, 59, 41, 0.5);
-    width: 82vw;
+    width: 90vw;
     display: flex;
     position: absolute;
     bottom: 8%;
     justify-content: flex-start;
     align-content: flex-end;
     color: 	rgb(45, 63, 48);
-    text-decoration: none !important;
     z-index: 1;
 }
 
@@ -664,7 +715,7 @@ body {
     display: inline-block;
     text-transform: uppercase;
     color: 	rgb(45, 63, 48);
-    text-decoration: none !important;
+    text-decoration: none 
     align-self: flex-end;
     text-align: left;
     padding-top: 1rem;
@@ -675,6 +726,7 @@ body {
 .bookIt a {
     display: inline-block;
     z-index: -1;
+    text-decoration: none;
 }
 
 /* main  */
@@ -877,6 +929,19 @@ body {
     padding: 0.5rem 0;
 }
 
+.fa-facebook {
+    position: absolute;
+    bottom: 5vh;
+    right: 5vh;
+    margin: 0 0.5rem;
+  }
+
+  .fa-instagram {
+    position: absolute;
+    bottom: 5vh;
+    right: 13vh;
+    margin: 0 0.5rem;
+  }
 
 
 }
