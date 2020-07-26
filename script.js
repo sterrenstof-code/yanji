@@ -59,7 +59,7 @@ knopPreise.addEventListener("click", function(){
 
 //uberMich
 
-let knopUberMich = document.querySelector(".bookIt-main ");
+let knopUberMich = document.querySelector(".firstTitle-main");
 let uberMichMain = document.querySelector(".uberMich-main");
 
 let uberMichVisible = false;
@@ -118,9 +118,9 @@ knopAnmeldung.addEventListener("click", function(){
     };
 })
 
-// Johanna Madeleine
+// Yanji Yoga
 
-const title = document.querySelector(".firstTitle-main ");
+const title = document.querySelector(".bookIt-main ");
 
 title.addEventListener("click", function(){
     anmeldungMain.style.display = "none";
@@ -132,3 +132,4 @@ title.addEventListener("click", function(){
     uberMichMain.style.display = "none";
     uberMichVisible = false;
 });
+

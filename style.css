@@ -22,7 +22,7 @@ body {
 }
 
 .homePage-main {
-    background-image: url(IMG_6013kopie.JPG);
+    background-image: url(722CE20B-7064-4E3F-B86C-B43623E8EE66kopie.JPG);
     background-size: cover;
     background-position: 55% 15%;
     width: 100vw;
@@ -31,6 +31,7 @@ body {
 
 
 .firstTitle-main {
+    z-index: 10;
     font-family: 'Mulish', sans-serif;
     color: rgb(53, 71, 49);
     font-size: 18px;
@@ -98,19 +99,16 @@ cursor: pointer;
     margin: 0.5rem 2.3rem;
     cursor:pointer;
     /*color: rgb(43, 59, 41);*/
-    text-decoration: underline;
-   
+    text-decoration: underline;  
 }
 
 .uberMich-main {
-    top: 5vh;
     text-align: left;
     display: block;
     height: 90vh;
     width: 27%;
     position: absolute;
     padding-left: 0.5rem;
-    bottom: 5vh;
     animation: slideMe 0.5s ease-out;
     -webkit-animation: slideMe 0.5s ease-out;
     border-right: 1px solid rgba(114, 114, 114, 0.233);
@@ -121,28 +119,39 @@ cursor: pointer;
     text-align: left;
     padding-left: 0.5rem;
    height: 90vh;
-   width: 25%;
+   width: 30%;
    position: absolute;
-   bottom: 5vh;
-   top: 5vh;
    display: none;
    animation: slideMe 0.5s ease-out;
    -webkit-animation: slideMe 0.5s ease-out;
-   border-right: 1px solid rgba(114, 114, 114, 0.233);
-   
+   border-right: 1px solid rgba(114, 114, 114, 0.233);  
 }
+
+.anmeldung-main{
+    width: 30%;
+    position: absolute;
+    top: 15vh;
+    bottom: 0;
+    display: none;
+    animation: slideMe 0.5s ease-out;
+    -webkit-animation: slideMe 0.5s ease-out;
+    border-right: 1px solid rgba(114, 114, 114, 0.233);
+}
+
+
 
 .main-main p {
     font-family: 'Mulish', sans-serif;
     color:  rgb(43, 59, 41);
-    padding: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    text-align: justify;
 }
 
 .main-main h3 {
     font-family: 'Mulish', sans-serif;
     color:  rgb(43, 59, 41);
-    padding: 1.5rem 1.5rem 0 1.5rem;
-    margin-top: 2rem;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    margin-top: 1rem;
 }
 
 .main-main h4 {
@@ -191,28 +200,27 @@ cursor: pointer;
 }
 */
 
-.anmeldung-main{
-    padding-left: 0.5rem;
-    display: inline-block;
-    height: 90vh;
-    width: 30%;
-    position: absolute;
-    top: 10vh;
-    bottom: 0;
-    display: none;
-    animation: slideMe 0.5s ease-out;
-    -webkit-animation: slideMe 0.5s ease-out;
-    border-right: 1px solid rgba(114, 114, 114, 0.233);
-}
+
 
 .anmeldung-main a {
     text-decoration: none;
     cursor: pointer;
     display: block;
-    margin: 0 1.3rem;
+    margin: 1rem 1.3rem;
     padding: 0.5rem 1rem;
     background-color: rgba(129, 124, 56, 0.925);
     width: 85%;
+    color: rgb(245, 245, 245);
+
+}
+
+.preise-main a {
+    text-decoration: none;
+    cursor: pointer;
+    display: block;
+    margin: 1rem 1.3rem;
+    padding: 0.5rem 1rem;
+    background-color: rgba(129, 124, 56, 0.925);
     color: rgb(245, 245, 245);
 
 }
@@ -335,6 +343,10 @@ cursor: pointer;
     top: 10vh;
     }
 
+}
+
+.calendar-main p {
+    font-family: 'Titillium Web', sans-serif;
 }
 
 
@@ -859,6 +871,10 @@ body {
     padding: 1rem;
     margin: 1rem 2rem 5rem 2rem;
     font-size: 1rem;
+}
+
+.anmeldung p, .standorte p, .uberMich p {
+    padding: 0.5rem 0;
 }
 
 
