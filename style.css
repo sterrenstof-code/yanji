@@ -103,6 +103,7 @@ cursor: pointer;
 }
 
 .uberMich-main {
+    top: 10vh;
     text-align: left;
     display: block;
     height: 90vh;
@@ -123,6 +124,7 @@ cursor: pointer;
    width: 25%;
    position: absolute;
    bottom: 5vh;
+   top: 10vh;
    display: none;
    animation: slideMe 0.5s ease-out;
    -webkit-animation: slideMe 0.5s ease-out;
@@ -190,12 +192,12 @@ cursor: pointer;
 */
 
 .anmeldung-main{
-    
     padding-left: 0.5rem;
     display: inline-block;
     height: 90vh;
     width: 30%;
     position: absolute;
+    top: 10vh;
     bottom: 0;
     display: none;
     animation: slideMe 0.5s ease-out;
