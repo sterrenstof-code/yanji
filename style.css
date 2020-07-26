@@ -421,9 +421,12 @@ cursor: pointer;
 }
 
     /* header*/
-.homePage {
-    background-image: url(722CE20B-7064-4E3F-B86C-B43623E8EE66.JPG) ;
+body {
+    background-image: url(722CE20B-7064-4E3F-B86C-B43623E8EE66.JPG);
+    transform: translate3d(0,0,0);
+  -webkit-transform: translate3d(0,0,0);
     background-size: cover;
+    position:static;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
