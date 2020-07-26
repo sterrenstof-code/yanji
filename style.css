@@ -430,6 +430,7 @@ cursor: pointer;
     background-attachment: fixed;
     background-position: center;
     background-color: rgb(218, 218, 217);
+    z-index: -10;
 }
 
 .homePage {

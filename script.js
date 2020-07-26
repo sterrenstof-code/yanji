@@ -53,7 +53,6 @@ knopPreise.addEventListener("click", function(){
     }
     else {
         preiseMain.style.display = "none";
-        console.log("none");
         preiseVisible = false;
     };
 })
